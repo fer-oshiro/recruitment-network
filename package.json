@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "AWS_PROFILE=dev sst dev",
+    "deploy": "AWS_PROFILE=dev sst deploy --stage prod"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2",
+    "@aws-sdk/client-secrets-manager": "^3.744.0",
+    "aws-sdk": "^2.1692.0",
+    "express": "4.21.2",
     "sst": "3.7.15"
   },
   "devDependencies": {
