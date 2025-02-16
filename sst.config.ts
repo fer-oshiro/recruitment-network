@@ -39,7 +39,7 @@ export default $config({
           },
         });
         api.route(
-          "GET /aaaaa",
+          "POST /{proxy+}",
           {
             handler: "src/api/lambda.handler",
             permissions: [
